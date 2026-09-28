@@ -1,0 +1,7 @@
+As variáveis:
+Nome, corte, preco, opcao, barba;
+
+Regras:
+1° - Cadastro de cliente
+2° - Escolha de corte
+3° - Consulta do último cliente
