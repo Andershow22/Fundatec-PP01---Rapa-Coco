@@ -8,6 +8,7 @@ public class app {
         double preco = 0;
         String nome = "", barba = "", corte = "";
         int opcao = 4, opCorte;
+        String barbeiro[] = {"Tesla", "Pitágoras", "Aristóteles"};
 
         // apresentação
         System.out.println("==================================");
@@ -17,8 +18,9 @@ public class app {
         while (opcao != 0) {
             // menu
             System.out.println("-------------MENU----------------");
-            System.out.println("[1] Escolha de corte de cabelo");
+            System.out.println("[1] Iniciar Atendimdento");
             System.out.println("[2] Consulta do último cliente");
+            System.out.println("[3] Consulta de Preços");
             System.out.println("[0] SAIR");
             System.out.println("---------------------------------");
             System.out.print("|:");
@@ -76,11 +78,20 @@ public class app {
                     System.out.println("============================");
                     System.out.println(""); // Pular Linha
                 }
-            }else if(opcao == 0){
-                System.out.println("Opção inválida!");
+            }else if(opcao == 3){
+                System.out.println("Tabela de preços:");
+                System.out.println("JitFade");
+                System.out.println("Preço: 30R$");
+                System.out.println("Lowfade");
+                System.out.println("Preço: 35R$");
+                System.out.println("Mullet");
+                System.out.println("Preço: 40R$");
+                System.out.println("Adicional barba: 10R$");
+            }
+            else if(opcao == 0){
+                System.out.println("Fim do programa.");
             }
         }
-        System.out.println("Fim do programa.");
         // System.out.println("O valor total do seu corte: R$ " + preco);
     }
 
